@@ -7,6 +7,7 @@ public class VitalX : ModuleRules
 	public VitalX(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PrecompileForTargets = PrecompileTargetsType.Any;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
@@ -26,6 +27,8 @@ public class VitalX : ModuleRules
 			new string[]
 			{
 				"Core",
+				"UMG",
+				"conSole"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
